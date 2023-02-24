@@ -4,13 +4,16 @@ export const LeftPanelContainer = styled.div`
   display: grid;
   grid-template-rows: 50vh 50vh;
   grid-gap: 1px;
-  background-color: #eee;
 `;
 
 export const UpperPanel = styled.div`
-  padding: 1px;
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const LowerPanel = styled.div`
-  padding: 1px;
+  background: #181818;
+  padding: 0px;
 `;
