@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Container } from "./styles";
 
 export function Clock() {
     let time = new Date().toLocaleTimeString('en-US', {
@@ -17,8 +18,8 @@ export function Clock() {
     setInterval(update_time, 1000);
 
     return (
-        <div>
+        <Container>
             <h1>{current_time}</h1>
-        </div>
+        </Container>
     );
 }

@@ -1,9 +1,9 @@
-import { Clock } from './components/Clock'
+import { SplitScreen } from './components/SplitScreen';
 
 export function App() {
   return (
     <>
-      <Clock />
+      <SplitScreen />
     </>
   );
 }
