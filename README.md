@@ -10,6 +10,8 @@ An interface able to select, add and remove items from a list.
 ## Shy Ball
 When pointing your cursor over the ball, it moves to a new random position.
 
+
+---
 ### Usage
 
 ```bash
