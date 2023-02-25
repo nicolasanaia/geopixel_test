@@ -1,6 +1,6 @@
-export type BallProps = {
+export interface BallProps {
     onMouseOver: () => void;
     x: number;
     y: number;
-    margin: number;
+    marginX: number;
 };

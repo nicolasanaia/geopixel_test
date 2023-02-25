@@ -3,7 +3,6 @@ import { Ball } from '../Ball';
 import { Position } from './interfaces';
 import { RightPanelContainer } from './styles';
 
-
 const getRandomPosition = (containerWidth: number, containerHeight: number): Position => {
     const ballSize = 50;
     const maxX = containerWidth - ballSize;
@@ -17,13 +16,14 @@ const getRandomPosition = (containerWidth: number, containerHeight: number): Pos
 export function RightPanel() {
     const containerRef = useRef<HTMLDivElement>(null);
     const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
-    const [margin, setMargin] = useState(0);
+    const [marginX, setMarginX] = useState(0);
 
     const handleResize = () => {
         const screenWidth = window.innerWidth;
-        const objectWidth = 50; // replace with the width of your object
-        const newMargin = (screenWidth / 2) + objectWidth / 2;
-        setMargin(newMargin);
+        const object = 50;
+        const newMarginX = (screenWidth / 2) + object / 2;
+
+        setMarginX(newMarginX);
     };
 
     useEffect(() => {
@@ -48,7 +48,7 @@ export function RightPanel() {
 
     return (
         <RightPanelContainer ref={containerRef}>
-            <Ball onMouseOver={handleMouseMove} x={position.x} y={position.y} margin={margin} />
+            <Ball onMouseOver={handleMouseMove} x={position.x} y={position.y} marginX={marginX} />
         </RightPanelContainer>
     )
 }

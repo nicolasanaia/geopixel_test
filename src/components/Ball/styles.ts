@@ -7,10 +7,9 @@ export const Container = styled.div<BallProps>`
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  margin: 0;
   background: radial-gradient(circle at 1rem 1rem, #5cabff, #000);
   position: absolute;
-  margin-left: ${props => props.margin}px;
+  margin-left: ${props => props.marginX}px;
 
   left: ${(props) => `${props.x}px`};
   top: ${(props) => `${props.y}px`};

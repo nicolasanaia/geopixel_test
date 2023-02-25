@@ -1,4 +1,5 @@
 import { Clock } from "../Clock";
+import { Selector } from "../Selector";
 import { LeftPanelContainer, LowerPanel, UpperPanel } from "./styles";
 
 export function LeftPanel() {
@@ -8,6 +9,7 @@ export function LeftPanel() {
                 <Clock />
             </UpperPanel>
             <LowerPanel>
+                <Selector />
             </LowerPanel>
         </LeftPanelContainer>
 

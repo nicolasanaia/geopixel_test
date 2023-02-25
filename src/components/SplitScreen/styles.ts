@@ -5,4 +5,5 @@ export const SplitScreenContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 1px;
   height: 100vh;
+  top: 0;
 `;
