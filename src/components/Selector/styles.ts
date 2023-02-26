@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const ItemList = styled.select`
-  margin-top: 16px;
+  margin-top: 20px;
   font-size: 16px;
 `;
 
